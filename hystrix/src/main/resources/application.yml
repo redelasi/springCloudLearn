@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8800/eureka/
+server:
+  port: 8806
+spring:
+  application:
+    name: service-ribbon
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000 # 设置hystrix的超时时间为5000ms
+
+
+
