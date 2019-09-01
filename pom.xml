@@ -30,6 +30,8 @@
         <module>zuul</module>
         <module>config</module>
         <module>springcloudBus</module>
+        <module>zipkin-hello</module>
+        <module>service-hand</module>
     </modules>
 
     <properties>
