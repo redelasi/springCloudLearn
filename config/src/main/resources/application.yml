@@ -10,14 +10,14 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:8800/eureka/
 
-spring:
-  application:
-    name: config-server
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/redelasi/config-repo
+#spring:
+#  application:
+#    name: config-server
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/redelasi/config-repo
 
 
 

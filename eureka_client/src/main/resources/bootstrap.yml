@@ -1,14 +1,19 @@
 spring:
   application:
-    name: config-server    # 对应config server所获取的配置文件的{application}
+    ####注册中心应用名称
+    name: test-itmayi
   cloud:
     config:
-      uri: http://config-server1/eureka_client-prod.yml
+      ####读取后缀
+      profile: prod
+      ####读取config-server注册地址
+      discovery:
+        service-id: config-single-server
+        enabled: true
+#####    eureka服务注册地址
 eureka:
-  instance:
-    hostname: localhost
   client:
-    registerWithEureka: true
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:8800/eureka/
+    service-url:
+      defaultZone: http://localhost:8800/eureka
+server:
+  port: 8801
