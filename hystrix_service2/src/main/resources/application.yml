@@ -3,10 +3,10 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8800/eureka/
 server:
-  port: 8806
+  port: 8816
 spring:
   application:
-    name: service-ribbon
+    name: hystrix_service2
 
 hystrix:
   command:
@@ -15,6 +15,16 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 10000 # 设置hystrix的超时时间为5000ms
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+
 
 
 

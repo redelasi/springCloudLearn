@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HiHystrixController {
 
     @Autowired
-    HelloService helloServicel;
+    HelloService helloService;
 
 
     @RequestMapping("/hello")
     public String hello(){
-        return helloServicel.hiService("gongmingxing");
+        return helloService.hiService("gongmingxing");
     }
 }

@@ -26,13 +26,15 @@
         <module>eureka_client1</module>
         <module>eureka_consumer</module>
         <module>feign</module>
-        <module>hystrix</module>
+        <module>hystrix_service1</module>
         <module>zuul</module>
         <module>config</module>
         <module>springcloudBus</module>
         <module>zipkin-hello</module>
         <module>zipkin-hand</module>
         <module>eureka_server2</module>
+        <module>hystrix_service2</module>
+        <module>hystrix_turbine</module>
     </modules>
 
     <properties>
