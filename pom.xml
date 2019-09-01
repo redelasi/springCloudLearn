@@ -37,6 +37,7 @@
         <module>hystrix_turbine</module>
         <module>springboot-admin</module>
         <module>springbootAdmin-Client</module>
+        <module>springcloud-garteway</module>
     </modules>
 
     <properties>
