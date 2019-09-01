@@ -35,6 +35,8 @@
         <module>eureka_server2</module>
         <module>hystrix_service2</module>
         <module>hystrix_turbine</module>
+        <module>springboot-admin</module>
+        <module>springbootAdmin-Client</module>
     </modules>
 
     <properties>
