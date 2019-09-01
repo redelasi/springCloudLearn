@@ -10,6 +10,20 @@ spring:
       discovery:
         service-id: config-single-server
         enabled: true
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+
+
+
+  rabbitmq:
+    host: localhost
+    #此处有坑，端口号不是15672，而是5672
+    port: 5672
+    username: guest
+    password: guest
+
 #####    eureka服务注册地址
 eureka:
   client:
@@ -17,3 +31,11 @@ eureka:
       defaultZone: http://localhost:8800/eureka
 server:
   port: 8801
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
