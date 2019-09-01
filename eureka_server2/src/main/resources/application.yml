@@ -1,0 +1,18 @@
+server:
+  port: 8815
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://peer1:8800/eureka/
+  server:
+    enable-self-preservation: false
+
+spring:
+  application:
+    name: eurka-server
+
