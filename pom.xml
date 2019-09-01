@@ -31,7 +31,7 @@
         <module>config</module>
         <module>springcloudBus</module>
         <module>zipkin-hello</module>
-        <module>service-hand</module>
+        <module>zipkin-hand</module>
         <module>eureka_server2</module>
     </modules>
 

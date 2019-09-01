@@ -1,5 +1,6 @@
 package com.springcloud.zipkin.controller;
 
+
 import brave.sampler.Sampler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
