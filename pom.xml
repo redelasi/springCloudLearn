@@ -38,6 +38,8 @@
         <module>springboot-admin</module>
         <module>springbootAdmin-Client</module>
         <module>springcloud-garteway</module>
+        <module>springcloud-zookeeper</module>
+        <module>springcloud-zookeeper1</module>
     </modules>
 
     <properties>

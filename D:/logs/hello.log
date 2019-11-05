@@ -1,0 +1,23 @@
+2019-11-05 17:49:13.983 ERROR 20972 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalArgumentException: Invalid path string "/config/info     ââââââââââââââå¿é¡»æè¯¥å±æ§éç½®ï¼å¦åå¯å¨æ¶æ¥ç©ºæéå¼å¸¸" caused by invalid charater @18
+	at org.apache.curator.utils.PathUtils.validatePath(PathUtils.java:102) ~[curator-client-4.0.1.jar:na]
+	at org.apache.curator.utils.PathUtils.validatePath(PathUtils.java:37) ~[curator-client-4.0.1.jar:na]
+	at org.apache.curator.utils.ZKPaths.fixForNamespace(ZKPaths.java:105) ~[curator-client-4.0.1.jar:na]
+	at org.apache.curator.framework.imps.NamespaceImpl.fixForNamespace(NamespaceImpl.java:104) ~[curator-framework-4.0.1.jar:4.0.1]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.fixForNamespace(CuratorFrameworkImpl.java:713) ~[curator-framework-4.0.1.jar:4.0.1]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:210) ~[curator-framework-4.0.1.jar:4.0.1]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:41) ~[curator-framework-4.0.1.jar:4.0.1]
+	at org.springframework.cloud.zookeeper.config.ZookeeperPropertySource.getChildren(ZookeeperPropertySource.java:116) ~[spring-cloud-zookeeper-config-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.cloud.zookeeper.config.ZookeeperPropertySource.findProperties(ZookeeperPropertySource.java:81) ~[spring-cloud-zookeeper-config-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.cloud.zookeeper.config.ZookeeperPropertySource.<init>(ZookeeperPropertySource.java:46) ~[spring-cloud-zookeeper-config-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.cloud.zookeeper.config.ZookeeperPropertySourceLocator.create(ZookeeperPropertySourceLocator.java:134) ~[spring-cloud-zookeeper-config-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.cloud.zookeeper.config.ZookeeperPropertySourceLocator.locate(ZookeeperPropertySourceLocator.java:112) ~[spring-cloud-zookeeper-config-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94) ~[spring-cloud-context-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:633) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at com.zookeeper.SpringCloudZookeeperApplication.main(SpringCloudZookeeperApplication.java:16) [classes/:na]
+
